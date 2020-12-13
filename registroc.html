@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Registrar Nuevo Usuario</title>
+<meta charset="UT-8"/>
+<link href="css/estilo.css" rel="style">
+</head>
+
+<header>
+<body bgcolor=seashell>
+<nav class="menu">
+<ul>
+<li><a href="Index.html"> Menú</li>
+<li><a href="Acercade.html"> Acerca de Nosotros </a></li>
+
+</ul>
+</nav>
+</header>
+
+<hr>
+<header>
+<div id="logo">
+<center><img src="logo.png" alt="logo" width=70% height=40%></center>
+</div>
+</header>
+<hr>
+
+<section id="formulario">
+<form name="Nuevo Usuario" method="POST" action="php/ConexUsu.php">
+
+
+IDUsuario:<br>
+<input type="text" name="IDUsuario" pattern="(a-zA-z0-9)+" placeholder="Ingrese su Id Usuario" required><br>
+
+Contraseña:<br>
+<input type="password" name="Contraseña" maxlength="20" autocomplete="new-password" placeholder="Ingrese su Contraseña" required><br>
+
+Nombre:<br>
+<input type="text" name="nombre" maxlength="30"  placeholder="Ingrese su Nombre" required><br>
+
+Apellido:<br>
+<input type="text" name="apellido" maxlength="30"  placeholder="Ingrese su Apellido" required><br>
+
+Correo Electrónico:<br>
+<input type="email" name="correo"   placeholder="Ingrese su Correo Electrónico" required><br>
+
+RFC:<br>
+<input type="text" name="rfc" maxlength="30" pattern="(a-zA-z0-9)+"  placeholder="Ingrese su RFC" required><br>
+<br>
+
+<input type="submit" name="enviar" class="botton" value="Registrarse">
+
+<input type="reset" name="enviar" class="botton" value="Borrar">
+
+<p><a href="Index.html" class="botton"> Regresar </a></p>
+</form>
+</section>
+
+
+<footer>
+<p> Copyright; 2020, Laurenth Make Natural</p>
+</footer>
+
+</body>
+</html>
